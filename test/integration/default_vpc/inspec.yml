@@ -1,4 +1,1 @@
-name: default_vpc
-depends:
-  - name: inspec_gcp
-    url: https://github.com/inspec/inspec-gcp/archive/v1.10.37.tar.gz
+../shared/inspec.yml

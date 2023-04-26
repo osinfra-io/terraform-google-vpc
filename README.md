@@ -48,9 +48,9 @@ See the documentation for setting up a local development environment [here](http
 
 Links to documentation and other resources required to develop and iterate in this repository successfully.
 
-- [VPC](https://cloud.google.com/vpc/docs/vpc)
 - [firewall](https://cloud.google.com/vpc/docs/firewalls)
-- [shared VPC](https://cloud.google.com/vpc/docs/shared-vpc)
+- [shared vpc](https://cloud.google.com/vpc/docs/shared-vpc)
+- [vpc](https://cloud.google.com/vpc/docs/vpc)
 
 ### Tests
 
