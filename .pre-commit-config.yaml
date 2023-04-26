@@ -1,0 +1,21 @@
+# Pre-commit
+# https://github.com/pre-commit/pre-commit
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-symlinks
+
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.77.2
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_docs
+      - id: terraform_validate
+        args:
+          - --hook-config=--retry-once-with-cleanup=true
+        exclude: test/fixtures/shared
