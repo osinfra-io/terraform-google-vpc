@@ -1,7 +1,7 @@
 # Input Variables
 # https://www.terraform.io/language/values/variables
 
-variable "project_id" {
+variable "project" {
   description = "The ID of the project in which the resource belongs"
   type        = string
 }

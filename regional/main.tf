@@ -8,7 +8,7 @@ resource "google_compute_subnetwork" "this" {
   name                     = each.key
   network                  = each.value.network
   private_ip_google_access = each.value.private_ip_google_access
-  project                  = var.project_id
+  project                  = var.project
   purpose                  = each.value.purpose
   region                   = each.value.region
   role                     = each.value.role

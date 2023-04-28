@@ -63,7 +63,7 @@ module "global" {
 module "regional" {
   source = "../../../regional"
 
-  project_id = var.project
+  project = var.project
 
   # Secondary ranges are used to allocate IP addresses to resources in a subnetwork. In this example we create Pod IP address ranges
   # and Service (ClusterIP) address ranges for a VPC-native cluster.

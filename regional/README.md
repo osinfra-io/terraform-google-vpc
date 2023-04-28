@@ -27,7 +27,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The ID of the project in which the resource belongs | `string` | n/a | yes |
+| <a name="input_project"></a> [project](#input\_project) | The ID of the project in which the resource belongs | `string` | n/a | yes |
 | <a name="input_secondary_ranges"></a> [secondary\_ranges](#input\_secondary\_ranges) | An array of configurations for secondary IP ranges for VM instances contained in this subnetwork | `map(any)` | `{}` | no |
 | <a name="input_subnets"></a> [subnets](#input\_subnets) | The map of subnets being created | <pre>map(object({<br>    network                  = string<br>    range                    = string<br>    region                   = string<br>    private_ip_google_access = optional(string)<br>    purpose                  = optional(string)<br>    role                     = optional(string)<br>  }))</pre> | n/a | yes |
 
@@ -35,5 +35,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_project_id"></a> [project\_id](#output\_project\_id) | The project ID |
+| <a name="output_project"></a> [project](#output\_project) | The project ID |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

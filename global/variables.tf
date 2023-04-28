@@ -21,15 +21,15 @@ variable "rules" {
       protocol = string
     })), [])
 
-    description         = optional(string, null)
+    description         = optional(string)
     direction           = string
     log_config_enabled  = optional(bool, true)
     log_config_metadata = optional(string, "INCLUDE_ALL_METADATA")
     name                = string
-    priority            = optional(number, null)
-    ranges              = optional(list(string), null)
-    source_tags         = optional(list(string), null)
-    target_tags         = optional(list(string), null)
+    priority            = optional(number)
+    ranges              = optional(list(string))
+    source_tags         = optional(list(string))
+    target_tags         = optional(list(string))
   }))
   default = []
 }
