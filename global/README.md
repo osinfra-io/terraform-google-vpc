@@ -29,7 +29,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_network_name"></a> [network\_name](#input\_network\_name) | Name of the network to create | `string` | `"osinfra-vpc"` | no |
+| <a name="input_name"></a> [name](#input\_name) | Name of the network to create | `string` | `"osinfra-vpc"` | no |
 | <a name="input_project"></a> [project](#input\_project) | The ID of the project in which the resource belongs | `any` | n/a | yes |
 | <a name="input_rules"></a> [rules](#input\_rules) | List of firewall rule definitions | <pre>list(object({<br>    allow = optional(list(object({<br>      ports    = list(string)<br>      protocol = string<br>    })), [])<br><br>    deny = optional(list(object({<br>      ports    = list(string)<br>      protocol = string<br>    })), [])<br><br>    description         = optional(string, null)<br>    direction           = string<br>    log_config_enabled  = optional(bool, true)<br>    log_config_metadata = optional(string, "INCLUDE_ALL_METADATA")<br>    name                = string<br>    priority            = optional(number, null)<br>    ranges              = optional(list(string), null)<br>    source_tags         = optional(list(string), null)<br>    target_tags         = optional(list(string), null)<br>  }))</pre> | `[]` | no |
 | <a name="input_shared_vpc"></a> [shared\_vpc](#input\_shared\_vpc) | Enable VPC sharing | `bool` | `false` | no |
@@ -38,7 +38,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_network_name"></a> [network\_name](#output\_network\_name) | The network name |
-| <a name="output_network_self_link"></a> [network\_self\_link](#output\_network\_self\_link) | The URI of the created resource |
+| <a name="output_name"></a> [name](#output\_name) | The network name |
 | <a name="output_project"></a> [project](#output\_project) | The ID of the project in which the resource belongs |
+| <a name="output_self_link"></a> [self\_link](#output\_self\_link) | The URI of the created resource |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

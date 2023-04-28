@@ -1,4 +1,4 @@
-variable "network_name" {
+variable "name" {
   description = "Name of the network to create"
   type        = string
   default     = "osinfra-vpc"

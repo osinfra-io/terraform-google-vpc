@@ -7,7 +7,7 @@ resource "google_compute_firewall" "rules" {
   description        = each.value.description
   destination_ranges = each.value.direction == "EGRESS" ? each.value.ranges : null
   direction          = each.value.direction
-  name               = "${var.network_name}-${each.value.name}"
+  name               = "${var.name}-${each.value.name}"
   network            = google_compute_network.this.name
   priority           = each.value.priority
   project            = var.project
@@ -44,7 +44,7 @@ resource "google_compute_firewall" "rules" {
 
 resource "google_compute_network" "this" {
   auto_create_subnetworks = "false"
-  name                    = var.network_name
+  name                    = var.name
   project                 = var.project
   routing_mode            = "GLOBAL"
 }

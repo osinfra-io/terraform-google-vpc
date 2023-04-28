@@ -1,7 +1,7 @@
 # Output Values
 # https://www.terraform.io/docs/language/values/outputs.html
 
-output "network_name" {
+output "name" {
   description = "The network name"
   value       = google_compute_network.this.name
 }
@@ -11,7 +11,7 @@ output "project" {
   value       = var.project
 }
 
-output "network_self_link" {
+output "self_link" {
   description = "The URI of the created resource"
   value       = google_compute_network.this.self_link
 }

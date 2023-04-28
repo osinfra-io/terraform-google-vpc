@@ -1,7 +1,7 @@
-module "test" {
+module "global" {
   source = "../../../global"
 
-  network_name = "shared-test-vpc"
-  project      = var.project
-  shared_vpc   = true
+  name       = "shared-test-vpc"
+  project    = var.project
+  shared_vpc = true
 }

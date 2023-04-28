@@ -1,11 +1,11 @@
-output "network_name" {
-  value = module.test.network_name
+output "name" {
+  value = module.global.name
 }
 
 output "project" {
-  value = module.test.project
+  value = module.global.project
 }
 
-output "network_self_link" {
-  value = module.test.network_self_link
+output "self_link" {
+  value = module.global.self_link
 }

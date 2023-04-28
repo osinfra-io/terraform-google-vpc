@@ -29,6 +29,7 @@ suites:
           controls:
             - compute_firewall
             - compute_network
+            - compute_subnet
 
   - name: shared_vpc
     transport:
