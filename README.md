@@ -6,7 +6,9 @@
 
 **[Infracost](https://www.infracost.io):**
 
-Monthly cost estimates for this module based off these usage values: [Default VPC](test/fixtures/default_vpc/infracost-usage.yml), [Shared VPC](test/fixtures/shared_vpc/infracost-usage.yml)
+[![infracost](https://img.shields.io/endpoint?label=Default%20VPC&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/19c599ec-c2ad-4031-8480-2110b02be0eb/branch/d36a38e2-44a6-4e64-a082-5f81bd3f9f61/terraform-google-vpc%2520-%2520Default%2520VPC)](https://dashboard.infracost.io/org/osinfra-io/repos/19c599ec-c2ad-4031-8480-2110b02be0eb)
+
+Monthly cost estimates for this module based off these usage values: [Default VPC](test/fixtures/default_vpc/infracost-usage.yml)
 
 Terraform **example** module for a Google Cloud Platform VPC.
 
