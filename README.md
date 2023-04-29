@@ -24,6 +24,20 @@ module "vpc" {
 
   network_name = "example-vpc"
   project      = "example-project"
+
+module "subnet" {
+  source   = "github.com/osinfra-io/terraform-google-vpc//regional?ref=v0.0.0"
+
+  project = "example-project"
+
+  subnets = {
+    default-subnet-us-east1 = {
+      private_ip_google_access = true
+      network                  = "example-vpc"
+      range                    = "10.60.0.0/20"
+      region                   = "us-east1"
+    }
+  }
 }
 ```
 
