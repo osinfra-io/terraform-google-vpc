@@ -1,1 +1,4 @@
-../shared/variables.tf
+variable "project" {
+  type    = string
+  default = "testing-kitchen-tf11-sb"
+}

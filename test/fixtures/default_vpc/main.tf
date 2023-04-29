@@ -58,6 +58,7 @@ module "global" {
       ranges              = ["10.0.0.8/32"]
     }
   ]
+  shared_vpc = true
 }
 
 module "regional" {

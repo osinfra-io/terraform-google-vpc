@@ -29,15 +29,5 @@ suites:
           controls:
             - compute_firewall
             - compute_network
-            - compute_subnet
-
-  - name: shared_vpc
-    transport:
-      root_module_directory: test/fixtures/shared_vpc
-    verifier:
-      color: true
-      systems:
-        - name: inspec_gcp
-          backend: gcp
-          controls:
             - compute_project_info
+            - compute_subnet

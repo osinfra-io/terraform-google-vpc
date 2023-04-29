@@ -44,6 +44,17 @@ control 'compute_network' do
   end
 end
 
+control 'compute_project_info' do
+  title 'Compute Project Info'
+
+  # Compute Project Info Resource
+  # https://www.inspec.io/docs/reference/resources/google_compute_project_info
+
+  describe google_compute_project_info(project: project) do
+    its('xpn_project_status') { should eq 'HOST' }
+  end
+end
+
 control 'compute_subnet' do
   title 'Compute Subnet'
 
