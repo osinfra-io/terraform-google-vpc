@@ -7,7 +7,3 @@ projects:
   - name: "terraform-google-vpc - Default VPC"
     path: test/fixtures/default_vpc
     usage_file: test/fixtures/default_vpc/infracost-usage.yml
-
-  - name: "terraform-google-vpc - Shared VPC"
-    path: test/fixtures/shared_vpc
-    usage_file: test/fixtures/shared_vpc/infracost-usage.yml
