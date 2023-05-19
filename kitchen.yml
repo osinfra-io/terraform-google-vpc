@@ -30,4 +30,3 @@ suites:
             - compute_firewall
             - compute_network
             - compute_project_info
-            - compute_subnet
