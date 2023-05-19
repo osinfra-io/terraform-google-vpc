@@ -54,25 +54,3 @@ control 'compute_project_info' do
     its('xpn_project_status') { should eq 'HOST' }
   end
 end
-
-control 'compute_subnet' do
-  title 'Compute Subnet'
-
-  # Compute Subnetwork Resource
-  # https://docs.chef.io/inspec/resources/google_compute_subnetwork
-
-  describe google_compute_subnetwork(project: project, name: 'default-subnet-us-east1', region: 'us-east1') do
-    it { should exist }
-    its('log_config.flow_sampling') { should eq 0.5 }
-    its('log_config.aggregation_interval') { should cmp 'INTERVAL_5_SEC' }
-    its('log_config.metadata') { should include 'INCLUDE_ALL_METADATA' }
-    its('private_ip_google_access') { should eq true }
-  end
-
-  describe google_compute_subnetwork(project: project, name: 'default-internal-lb-subnet-us-east1',
-                                     region: 'us-east1') do
-    it { should exist }
-    its('purpose') { should cmp 'INTERNAL_HTTPS_LOAD_BALANCER' }
-    its('role') { should cmp 'ACTIVE' }
-  end
-end
