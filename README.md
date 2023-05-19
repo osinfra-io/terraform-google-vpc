@@ -24,8 +24,8 @@ Here is an example of a basic configuration:
 module "vpc" {
   source   = "github.com/osinfra-io/terraform-google-vpc//global?ref=v0.0.0"
 
-  network_name = "example-vpc"
-  project      = "example-project"
+  name    = "example-vpc"
+  project = "example-project"
 }
 ```
 
