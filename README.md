@@ -64,7 +64,13 @@ Links to documentation and other resources required to develop and iterate in th
 
 ```none
 bundle exec kitchen converge
+```
+
+```none
 bundle exec kitchen verify
+```
+
+```none
 bundle exec kitchen destroy
 ```
 
