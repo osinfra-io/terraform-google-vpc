@@ -1,4 +1,4 @@
-# <img align="left" width="45" height="45" src="https://user-images.githubusercontent.com/1610100/234732421-ef3a5c43-817d-4e99-8e0c-d43f07358791.png"> Google Cloud Platform - VPC Terraform Module
+# <img align="left" width="45" height="45" src="https://github.com/osinfra-io/terraform-google-vpc/assets/1610100/b99acbaf-aea0-4004-b3cf-641eafa137c4"> Google Cloud Platform - VPC Terraform Module
 
 **[GitHub Actions](https://github.com/osinfra-io/terraform-google-vpc/actions):**
 
