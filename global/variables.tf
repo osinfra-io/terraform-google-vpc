@@ -39,3 +39,9 @@ variable "shared_vpc" {
   type        = bool
   default     = false
 }
+
+variable "shared_vpc_service_projects" {
+  description = "The set of service projects to attach to the shared VPC"
+  type        = set(string)
+  default     = []
+}
