@@ -10,7 +10,7 @@
 
 Monthly cost estimates for this module based on these usage values:
 
-- [default vpc](test/fixtures/default_vpc/infracost-usage.yml)
+- [default_vpc](test/fixtures/default_vpc/infracost-usage.yml)
 
 ## Repository Description
 
