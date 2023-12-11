@@ -58,5 +58,9 @@ module "global" {
       ranges              = ["10.0.0.8/32"]
     }
   ]
-  shared_vpc = true
+
+  # In order to test this we would need a new project created in the google-cloud-kitchen-terraform
+  # repository. The two existing projects are already using shared VPCs.
+
+  shared_vpc = false
 }
