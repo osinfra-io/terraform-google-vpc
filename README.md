@@ -2,7 +2,7 @@
 
 **[GitHub Actions](https://github.com/osinfra-io/terraform-google-vpc/actions):**
 
-[![Kitchen Tests](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/kitchen.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/kitchen.yml) [![CodeQL](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/github-code-scanning/codeql) [![Dependabot](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/dependabot.yml)
+[![Dependabot](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/dependabot.yml)
 
 **[Infracost](https://www.infracost.io):**
 
@@ -20,7 +20,7 @@ Terraform **example** module for a Google Cloud Platform VPC.
 ## 🔩 Usage
 
 > [!TIP]
-> You can check the [test/fixtures](test/fixtures/) directory for example configurations. These fixtures set up the system for testing by providing all the necessary initial code, thus creating good examples to base your configurations.
+> You can check the [fixtures](fixtures/) directory for example configurations. These fixtures set up the system for testing by providing all the necessary initial code, thus creating good examples to base your configurations.
 
 ## <img align="left" width="35" height="35" src="https://github.com/osinfra-io/github-organization-management/assets/1610100/39d6ae3b-ccc2-42db-92f1-276a5bc54e65"> Development
 
@@ -35,8 +35,6 @@ See the documentation for setting up a local development environment [here](http
 ### 🛠️ Tools
 
 - [infracost](https://github.com/infracost/infracost)
-- [inspec](https://github.com/inspec/inspec)
-- [kitchen-terraform](https://github.com/newcontext-oss/kitchen-terraform)
 - [pre-commit](https://github.com/pre-commit/pre-commit)
 - [pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform)
 - [terraform-docs](https://github.com/terraform-docs/terraform-docs)
@@ -54,22 +52,17 @@ Links to documentation and other resources required to develop and iterate in th
 You'll need to be a member of the [platform-contributors](https://groups.google.com/a/osinfra.io/g/platform-contributors) Google Group to run the tests. This group manages access to the resource hierarchy's `Testing/Sandbox` folder. You can request access to this group by opening an issue [here](https://github.com/osinfra-io/google-cloud-hierarchy/issues/new?assignees=&labels=enhancement&projects=&template=add-update-identity-group.yml&title=Add+or+update+identity+group).
 
 ```none
-bundle install
+cd fixtures/default
 ```
 
 ```none
-bundle exec kitchen converge
+terraform init
 ```
 
 ```none
-bundle exec kitchen verify
-```
-
-```none
-bundle exec kitchen destroy
+terraform test
 ```
 
 ## Terraform Documentation
 
 - [global](global/README.md)
-- [regional](regional/README.md)

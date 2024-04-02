@@ -1,5 +1,5 @@
-module "global" {
-  source = "../../../global"
+module "test" {
+  source = "../../global"
 
   name    = "test-vpc"
   project = var.project
@@ -60,7 +60,7 @@ module "global" {
   ]
 
   # In order to test this we would need a new project created in the google-cloud-kitchen-terraform
-  # repository. The two existing projects are already using shared VPCs.
+  # repository. The existing projects are already a shared VPC host or service projects.
 
   shared_vpc = false
 }
