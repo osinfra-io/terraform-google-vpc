@@ -1,0 +1,22 @@
+name: Terraform Tests
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    paths-ignore:
+      - "**.md"
+
+permissions:
+  id-token: write
+
+jobs:
+  tests:
+    name: "Global"
+    uses: osinfra-io/github-terraform-called-workflows/.github/workflows/test.yml@add-test-workflow
+    if: github.actor != 'dependabot[bot]'
+    with:
+      checkout_ref: ${{ github.ref }}
+      terraform_version: ${{ vars.TERRAFORM_VERSION }}
