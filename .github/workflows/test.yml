@@ -10,13 +10,14 @@ on:
       - "**.md"
 
 permissions:
-  contents: read
+  id-token: write
 
 jobs:
   tests:
-    name: "Tests"
+    name: "Global"
     uses: osinfra-io/github-terraform-called-workflows/.github/workflows/test.yml@add-test-workflow
     if: github.actor != 'dependabot[bot]'
     with:
       checkout_ref: ${{ github.ref }}
-      terraform_version: ${{ vars.TERRAFORM_VERSION }}
+      service_account: "plt-lz-testing-github@ptl-lz-terraform-tf91-sb.iam.gserviceaccount.com"
+      workload_identity_provider: "projects/746490462722/locations/global/workloadIdentityPools/github-actions/providers/github-actions-oidc"
