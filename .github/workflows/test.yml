@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   tests:
-    name: "Global"
+    name: "Default"
     uses: osinfra-io/github-terraform-called-workflows/.github/workflows/test.yml@add-test-workflow
     if: github.actor != 'dependabot[bot]'
     with:
