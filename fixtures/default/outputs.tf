@@ -1,11 +1,14 @@
 output "name" {
-  value = module.test.name
+  description = "The network name"
+  value       = module.test.name
 }
 
 output "project" {
-  value = module.test.project
+  description = "The ID of the project in which the resource belongs"
+  value       = module.test.project
 }
 
 output "self_link" {
-  value = module.test.self_link
+  description = "The URI of the created resource"
+  value       = module.test.self_link
 }
