@@ -59,7 +59,7 @@ module "test" {
     }
   ]
 
-  # In order to test this we would need a new project created in the google-cloud-kitchen-terraform
+  # In order to test this we would need a new project created in the google-cloud-terraform-testing
   # repository. The existing projects are already a shared VPC host or service projects.
 
   shared_vpc = false
