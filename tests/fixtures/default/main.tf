@@ -1,5 +1,5 @@
 module "test" {
-  source = "../../global"
+  source = "../../../global"
 
   name    = "test-vpc"
   project = var.project
